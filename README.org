@@ -1,0 +1,56 @@
+#+TITLE: minecraft-pi
+#+LATEX: \pagebreak
+
+* Overview
+
+  ~minecraft-pi~ is a low-level interface to the Minecraft Pi Edition API for
+  Ruby. It covers the known API, and should map directly to the documentation
+  included with MCPI (minus the bits that are python-specific).
+
+* Notable Features
+
+  - All methods have =Contracts= defined, and conform to them.
+  - Where appropriate, most methods have automatic retry behaviour.
+  - The undocumented =Entity= API is supported, making it easier to work with multiplayer sessions.
+
+* Supported Versions
+
+  ~minecraft-pi~ is tested with the official =0.1.1= release, and the unofficial =0.6.1= patches.
+
+* Installation
+
+  #+BEGIN_SRC shell
+    gem install minecraft-pi
+  #+END_SRC
+
+* Usage
+
+  The following code will set the block at the host player's feet to pink wool:
+
+  #+BEGIN_SRC ruby
+    require 'minecraft-pi'
+
+    mc = MinecraftPi::Client.new
+
+    x, y, z = mc.player.getPos
+
+    mc.world.setBlockWithData x, y-1, z, 35, 6
+  #+END_SRC
+
+  See the [[https://colstrom.github.io/minecraft-pi/doc/][documentation]] for more information.
+
+* Known Issues
+
+  - =EventsBlock#hits= has been observed to cause crashes with some patched
+    versions of MCPI. This has been observed on a client with community-provided
+    patches applied, enabling surivival mode and fullscreen support. This does
+    not occur with the official =0.1.1= release.
+
+* License
+
+  The ~minecraft-pi~ gem is available under the [[https://tldrlegal.com/license/mit-license][MIT License]]. See ~LICENSE.txt~
+  for the full text.
+
+* Contributors
+
+  - [[https://colstrom.github.io/][Chris Olstrom]] | [[mailto:chris@olstrom.com][e-mail]] | [[https://twitter.com/ChrisOlstrom][Twitter]]
