@@ -1,0 +1,13 @@
+lib/minecraft-pi.rb 99145d315c20828287367c77580f6afa8b8c92d5
+lib/minecraft-pi/chat.rb f4ac46672bc1c58a4f7f3e32356247aa1fd01942
+lib/minecraft-pi/world.rb 606f23c604ea6da1c93f48cf3b8735a9404def0d
+lib/minecraft-pi/error.rb 401329802f901155c9198d9007c0f6e0f3bbf51d
+lib/minecraft-pi/player.rb 9edc33b4ed62e71c086339f1432146cd744a5adf
+lib/minecraft-pi/socket.rb 57debfa9ac616c8f5958273ec57d53557b2c4ed3
+lib/minecraft-pi/events.rb e7e9bc8f32cb972b7e9cf4a2bbf11c2bc9b16ffb
+lib/minecraft-pi/client.rb 029d10b8b73efe255ed2c891f13ce40aeefaab64
+lib/minecraft-pi/entity.rb be9dfc8df7d1725bdaafa9396c7c62a0797ecb77
+lib/minecraft-pi/camera.rb 7eb4389738d6ca021fc143ef6c2eb5c9ff0d6758
+lib/minecraft-pi/camera_mode.rb 6dc912b03e83391cc3e309ebc579a9d3db304be1
+lib/minecraft-pi/events_block.rb ac6e384e889da7d3fab09f9876aca1b26950526b
+lib/minecraft-pi/world_checkpoint.rb d8ebef24c5b308abc9e746756ebadbffbbfd248e
