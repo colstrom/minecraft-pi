@@ -37,7 +37,7 @@
     mc.world.setBlockWithData x, y-1, z, 35, 6
   #+END_SRC
 
-  See the [[https://colstrom.github.io/minecraft-pi/doc/][documentation]] for more information.
+  See the [[https://colstrom.github.io/minecraft-pi/][documentation]] for more information.
 
 * Known Issues
 
